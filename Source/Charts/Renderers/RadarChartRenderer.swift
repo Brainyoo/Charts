@@ -83,7 +83,7 @@ open class RadarChartRenderer: LineRadarRenderer
         let path = CGMutablePath()
         var hasMovedToPoint = false
 
-        let prefix: String = chart.data?.accessibilityEntryLabelPrefix ?? "Item"
+        let prefix: String = chart.data?.accessibilityEntryLabelSingularPrefix ?? "Item"
         let description = dataSet.label ?? ""
 
         // Make a tuple of (xLabels, value, originalIndex) then sort it
