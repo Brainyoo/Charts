@@ -150,8 +150,6 @@ open class PieChartRenderer: NSObject, DataRenderer
         let singularPrefix: String = chart.data?.accessibilityEntryLabelSingularPrefix ?? "Element"
         let pluralPrefix: String = chart.data?.accessibilityEntryLabelPluralPrefix ?? "Elements"
 
-        let description = chart.chartDescription.text ?? dataSet.label ?? chart.centerText ??  "Pie Chart"
-
         let description = chart.chartDescription.text ?? chart.centerText ?? dataSet.label ??  "Pie Chart"
 
         let
